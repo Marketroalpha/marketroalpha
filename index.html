@@ -5,11 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>MarketRoAlpha | Growth Marketing Agency</title>
 
-<!-- Favicon -->
-<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon.png">
-<link rel="shortcut icon" href="assets/favicon.png">
+<link rel="icon" type="image/png" href="assets/favicon.png">
 
-<!-- Google Font -->
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
@@ -21,132 +18,128 @@
   --gradient-main: linear-gradient(90deg, #e10600, #ff4d79);
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+* { margin:0; padding:0; box-sizing:border-box; }
 
 body {
-  font-family: 'Poppins', sans-serif;
-  background-color: var(--dark-bg);
-  color: white;
-  line-height: 1.6;
+  font-family:'Poppins',sans-serif;
+  background:var(--dark-bg);
+  color:white;
 }
 
 /* NAVBAR */
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 8%;
-  background: var(--deep-navy);
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 8%;
+  background:var(--deep-navy);
 }
 
-.logo {
-  height: 60px;
-}
+.logo { height:60px; }
 
 .nav-links a {
-  margin-left: 25px;
-  text-decoration: none;
-  color: white;
-  font-weight: 500;
-  transition: 0.3s;
+  margin-left:25px;
+  text-decoration:none;
+  color:white;
+  font-weight:500;
+  transition:0.3s;
 }
+.nav-links a:hover { color:var(--primary-red); }
 
-.nav-links a:hover {
-  color: var(--primary-red);
-}
-
-/* HERO SECTION */
+/* HERO */
 .hero {
-  height: 90vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background: radial-gradient(circle at top, #1a1a1a, #0d0d0d);
-  padding: 0 10%;
+  height:90vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding:0 10%;
 }
-
 .hero h1 {
-  font-size: 50px;
-  background: var(--gradient-main);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  font-size:48px;
+  background:var(--gradient-main);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
 }
-
-.hero p {
-  margin-top: 20px;
-  font-size: 18px;
-  color: #ccc;
-}
+.hero p { margin-top:20px; color:#ccc; }
 
 .btn-primary {
-  display: inline-block;
-  margin-top: 30px;
-  padding: 14px 32px;
-  border-radius: 30px;
-  background: var(--gradient-main);
-  color: white;
-  text-decoration: none;
-  font-weight: 600;
-  transition: 0.3s ease;
+  display:inline-block;
+  margin-top:30px;
+  padding:14px 32px;
+  border-radius:30px;
+  background:var(--gradient-main);
+  color:white;
+  text-decoration:none;
+  font-weight:600;
+  border:none;
+  cursor:pointer;
+  transition:0.3s;
 }
-
 .btn-primary:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 20px rgba(225, 6, 0, 0.6);
+  transform:scale(1.05);
+  box-shadow:0 0 20px rgba(225,6,0,0.6);
 }
 
 /* SECTION */
-.section {
-  padding: 80px 10%;
-  text-align: center;
-}
-
+.section { padding:80px 10%; text-align:center; }
 .section h2 {
-  font-size: 36px;
-  margin-bottom: 40px;
-  background: var(--gradient-main);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  font-size:36px;
+  margin-bottom:40px;
+  background:var(--gradient-main);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
 }
 
-/* SERVICES */
-.services-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
+/* GRID */
+.grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:30px;
 }
-
 .card {
-  background: #141414;
-  padding: 30px;
-  border-radius: 15px;
-  transition: 0.3s;
+  background:#141414;
+  padding:30px;
+  border-radius:15px;
+  transition:0.3s;
 }
-
 .card:hover {
-  transform: translateY(-10px);
-  border: 1px solid var(--primary-red);
+  transform:translateY(-8px);
+  border:1px solid var(--primary-red);
 }
 
-/* WHY CHOOSE US */
-.why-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
+/* CONTACT FORM */
+.contact-form {
+  max-width:600px;
+  margin:auto;
+  text-align:left;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width:100%;
+  padding:12px;
+  margin-bottom:20px;
+  border-radius:8px;
+  border:1px solid #333;
+  background:#1a1a1a;
+  color:white;
+}
+
+.success-message {
+  margin-top:20px;
+  color:#4CAF50;
+  display:none;
+  font-weight:500;
 }
 
 /* FOOTER */
 footer {
-  background: #111;
-  padding: 40px;
-  text-align: center;
-  color: #aaa;
-  border-top: 2px solid var(--primary-red);
+  background:#111;
+  padding:40px;
+  text-align:center;
+  border-top:2px solid var(--primary-red);
+  color:#aaa;
 }
 </style>
 </head>
@@ -155,7 +148,7 @@ footer {
 
 <!-- NAVBAR -->
 <nav class="navbar">
-  <img src="assets/logo.png" alt="MarketRoAlpha Logo" class="logo">
+  <img src="assets/logo.png" class="logo">
   <div class="nav-links">
     <a href="#services">Services</a>
     <a href="#why">Why Choose Us</a>
@@ -167,7 +160,7 @@ footer {
 <section class="hero">
   <div>
     <h1>Performance Marketing That Drives Real Growth</h1>
-    <p>We help brands scale profitably with data-driven paid media, automation, and conversion-focused strategies.</p>
+    <p>We help brands scale profitably with data-driven paid campaigns and automation.</p>
     <a href="#contact" class="btn-primary">Get Free Strategy Call</a>
   </div>
 </section>
@@ -175,60 +168,86 @@ footer {
 <!-- SERVICES -->
 <section id="services" class="section">
   <h2>Our Services</h2>
-  <div class="services-grid">
+  <div class="grid">
     <div class="card">
       <h3>Performance Marketing</h3>
-      <p>ROI-focused paid campaigns across Google, Meta & more to drive scalable growth.</p>
+      <p>ROI-focused campaigns across Google & Meta.</p>
     </div>
     <div class="card">
       <h3>Lead Generation</h3>
-      <p>High-quality leads with optimized funnels & smart targeting strategies.</p>
+      <p>High-converting funnels built for scale.</p>
     </div>
     <div class="card">
       <h3>Marketing Automation</h3>
-      <p>Retention & lifecycle marketing using advanced automation tools.</p>
+      <p>Retention systems & lifecycle growth.</p>
     </div>
     <div class="card">
       <h3>Website Development</h3>
-      <p>Conversion-optimized websites designed to turn visitors into customers.</p>
+      <p>Conversion-optimized premium websites.</p>
     </div>
   </div>
 </section>
 
-<!-- WHY CHOOSE US -->
+<!-- WHY -->
 <section id="why" class="section">
   <h2>Why Choose MarketRoAlpha?</h2>
-  <div class="why-grid">
-    <div class="card">
-      <h3>Data-Driven Decisions</h3>
-      <p>Every strategy is backed by analytics, performance tracking & real metrics.</p>
-    </div>
-    <div class="card">
-      <h3>ROI-Focused Approach</h3>
-      <p>We focus on profitability, not just impressions and clicks.</p>
-    </div>
-    <div class="card">
-      <h3>Transparent Reporting</h3>
-      <p>Clear dashboards and weekly performance updates.</p>
-    </div>
-    <div class="card">
-      <h3>Growth Partnership</h3>
-      <p>We work as an extension of your team to scale sustainably.</p>
-    </div>
+  <div class="grid">
+    <div class="card"><h3>Data Driven</h3><p>Decisions backed by analytics.</p></div>
+    <div class="card"><h3>ROI Focused</h3><p>Profit over vanity metrics.</p></div>
+    <div class="card"><h3>Transparent</h3><p>Clear reporting always.</p></div>
+    <div class="card"><h3>Growth Partner</h3><p>We scale with you.</p></div>
   </div>
 </section>
 
 <!-- CONTACT -->
 <section id="contact" class="section">
-  <h2>Let’s Scale Your Brand</h2>
-  <p>Ready to unlock growth? Book your free strategy session today.</p>
-  <a href="mailto:info@marketroalpha.com" class="btn-primary">Contact Us</a>
+  <h2>Contact Us</h2>
+
+  <form name="submit-to-google-sheet" class="contact-form">
+    <input type="text" name="Name" placeholder="Your Name" required>
+    <input type="email" name="Email" placeholder="Your Email" required>
+    <input type="text" name="Phone" placeholder="Phone Number" required>
+    <input type="text" name="Company" placeholder="Company Name">
+    <textarea name="Message" rows="5" placeholder="Your Message"></textarea>
+    <button type="submit" class="btn-primary">Submit</button>
+  </form>
+
+  <div class="success-message" id="successMsg">
+    Thank you! Your message has been submitted successfully.
+  </div>
 </section>
 
-<!-- FOOTER -->
 <footer>
   © 2026 MarketRoAlpha. All Rights Reserved.
 </footer>
+
+<!-- GOOGLE SHEETS SCRIPT (RESTORED) -->
+<script>
+const params = new URLSearchParams(window.location.search);
+["utm_source","utm_medium","utm_campaign"].forEach(p => {
+  const field = document.querySelector(`[name="${p}"]`);
+  if (field) field.value = params.get(p) || "";
+});
+
+document.getElementById("leadForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+  const form = this;
+  const formData = new FormData(form);
+
+  fetch("https://script.google.com/macros/s/AKfycbwUHkNaljAnnKyk7UXn6EKhqvBQuNROEURjhcvdE0Cz9cgrmAB53pd1E2gHwjqHzjlzAA/exec", {
+    method: "POST",
+    body: formData
+  });
+
+  document.getElementById("successInline").style.display = "block";
+  document.getElementById("successModal").classList.add("active");
+  form.reset();
+});
+
+function closeModal() {
+  document.getElementById("successModal").classList.remove("active");
+}
+</script>
 
 </body>
 </html>
